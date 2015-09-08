@@ -1,0 +1,89 @@
+body
+{
+	margin: 0;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+}
+
+* { box-sizing: border-box; }
+
+
+/* narrow - 1 x resolution */
+
+.banner
+{
+	margin: 0 auto;
+	max-width: 1200px;
+	height: 200px;
+	border: 5px solid #aaa;
+	background: url(../img/narrow-1x.jpg) no-repeat 50% 0;
+}
+
+
+/* narrow - 2 x resolution */
+
+@media
+(-webkit-min-device-pixel-ratio: 2) and (max-width: 419px),
+(min-resolution: 192dpi) and (max-width: 419px)
+{
+	.banner
+	{
+		background: url(../img/narrow-2x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+}
+
+
+/* narrow - 3 x resolution */
+
+@media 
+(-webkit-min-device-pixel-ratio: 3) and (max-width: 419px), 
+(min-resolution: 350dpi) and (max-width: 419px)
+{
+	.banner
+	{
+		background: url(../img/narrow-3x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+}
+
+
+/* wide - 1 x resolution */
+
+@media
+(min-width: 420px)
+{
+	.banner
+	{
+		background: url(../img/wide-1x.jpg) no-repeat 50% 0;
+	}
+}
+
+
+/* wide - 2 x resolution */
+
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-width: 420px),
+(min-resolution: 192dpi) and (min-width: 420px)
+{
+	.banner
+	{
+		background: url(../img/wide-2x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+}
+
+
+/* wide - 3 x resolution */
+
+@media 
+(-webkit-min-device-pixel-ratio: 3) and (min-width: 420px), 
+(min-resolution: 350dpi) and (min-width: 420px)
+{
+	.banner
+	{
+		background: url(../img/wide-3x.jpg) no-repeat 50% 0;
+		background-size: cover;
+	}
+}
